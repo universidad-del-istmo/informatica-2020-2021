@@ -1,0 +1,3 @@
+#estoy practicano en terminal ubuntu 
+#ojala se suba el archivo
+# esta es prueba #1 del EJERCICIO #1
