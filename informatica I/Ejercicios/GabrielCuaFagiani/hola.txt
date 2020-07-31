@@ -1,3 +1,2 @@
 Esta es la tarea despúes de empezar desde 0.
 Logré recuperar el ReadMe y el GitIgnore.
-:)
