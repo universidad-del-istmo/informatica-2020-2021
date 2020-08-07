@@ -18,12 +18,12 @@
 6. ¿Son las medidas 3,4,5 y 6,3,9 medidas válidas para los lados de un triángulo?
 `5 > 3+4 && 9 > 6+3`
 
-7. Dada la parábola ![](./informatica I/laboratorios/laboratorio 2/parabola.png):
+7. Dada la parábola ![](../../../laboratorios/laboratorio%202/parabola.png):
     - El punto (3, 17) o (5, 35) se encuentra en la parábola
     - y el punto (7,63) se encuentra en la parábola
 `(3^2 + 2*3 == 17 || 5^2 + 2*5 == 35) && 7^2 + 2*7 == 63`
 
-8. Dados los polinomios ![](./informatica I/laboratorios/laboratorio 2/poli1.png) y ![](./informatica I/laboratorios/laboratorio 2/poli2.png), ¿se cumple: ![](./informatica I/laboratorios/laboratorio 2/resp.png)?
+8. Dados los polinomios ![](../../../laboratorios/laboratorio%202/poli1.png) y ![](../../../laboratorios/laboratorio%202/poli2.png), ¿se cumple: ![](../../../laboratorios/laboratorio%202/resp.png)?
 `4*(3/4)^2 + (3/4) == -(4*(3/4)^2 + (3/4))`
 
 9. ¿Tiene mayor área un triángulo con lados 8, 8 y 10 o un círculo de diámetro 15?
