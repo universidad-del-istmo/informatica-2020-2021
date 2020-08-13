@@ -22,7 +22,7 @@
 
 6. ¿Son las medidas 3,4,5 y 6,3,9 medidas válidas para los lados de un triángulo?
 
-    `5 > 3+4 && 9 > 6+3`
+    `(5 < 3+4) && (9 < 6+3)`
 
 7. Dada la parábola ![](../../../laboratorios/laboratorio%202/parabola.png):
     - El punto (3, 17) o (5, 35) se encuentra en la parábola
