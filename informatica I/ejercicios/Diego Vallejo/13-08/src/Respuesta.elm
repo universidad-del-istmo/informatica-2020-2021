@@ -51,3 +51,4 @@ valorLista3 = List.head drop1
 a = Maybe.withDefault 0 valorLista3
 suma = 41 + a
 lista6 = suma :: lista3
+
