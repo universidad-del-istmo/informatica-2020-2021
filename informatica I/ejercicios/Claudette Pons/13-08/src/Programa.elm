@@ -1,8 +1,6 @@
 module Programa exposing (..)
 import List
 
-valor = 42
-
 maybeVacio = List.head []
 
 maybeConValor = List.head [1,2,3]
