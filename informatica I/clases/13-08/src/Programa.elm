@@ -46,7 +46,7 @@ valorLista3 = List.head lista3sindos
 
 -- A "valorLista3", deben sumarle 41
 -- y agregarlo al principio de
--- "lista5"
+-- "lista3"
 -- Deberia quedarles [42,6,4,1,2,3]
 valorLista3N = (Maybe.withDefault 0 valorLista3) + 41
 lista6 = valorLista3N :: lista5
