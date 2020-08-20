@@ -48,19 +48,18 @@ areaMaybe (x1,y1) (x2,y2) (x3,y3) (x4,y4) =
 
 sumAreas (x1,y1) (x2,y2) (x3,y3) (x4,y4) (x5,y5) (x6,y6) (x7,y7) (x8,y8) = 
     if Maybe.withDefault 0 (areaMaybe (x1,y1) (x2,y2) (x3,y3) (x4,y4)) + 
-        Maybe.withDefault 0 (areaMaybe (x5,y5) (x6,y6) (x7,y7) (x8,y8)) /= Maybe.withDefault 0 (Nothing)
+        Maybe.withDefault 0 (areaMaybe (x5,y5) (x6,y6) (x7,y7) (x8,y8)) /= 0
         then Maybe.withDefault 0 (areaMaybe (x1,y1) (x2,y2) (x3,y3) (x4,y4)) + 
         Maybe.withDefault 0 (areaMaybe (x5,y5) (x6,y6) (x7,y7) (x8,y8)) 
         else 
-            (if Maybe.withDefault 0 (areaMaybe (x1,y1) (x2,y2) (x3,y3) (x4,y4)) == Maybe.withDefault 0 (Nothing)
-            then (if Maybe.withDefault 0 (areaMaybe (x5,y5) (x6,y6) (x7,y7) (x8,y8)) /= Maybe.withDefault 0 (Nothing) 
+            (if Maybe.withDefault 0 (areaMaybe (x1,y1) (x2,y2) (x3,y3) (x4,y4)) == 0
+            then (if Maybe.withDefault 0 (areaMaybe (x5,y5) (x6,y6) (x7,y7) (x8,y8)) /= 0
                     then Maybe.withDefault 0 (areaMaybe (x5,y5) (x6,y6) (x7,y7) (x8,y8)) else 0)
             else 
-                (if Maybe.withDefault 0 (areaMaybe (x5,y5) (x6,y6) (x7,y7) (x8,y8)) == Maybe.withDefault 0 (Nothing) 
-                then (if Maybe.withDefault 0 (areaMaybe (x1,y1) (x2,y2) (x3,y3) (x4,y4)) /= Maybe.withDefault 0 (Nothing)
+                (if Maybe.withDefault 0 (areaMaybe (x5,y5) (x6,y6) (x7,y7) (x8,y8)) == 0 
+                then (if Maybe.withDefault 0 (areaMaybe (x1,y1) (x2,y2) (x3,y3) (x4,y4)) /= 0
                         then Maybe.withDefault 0 (areaMaybe (x1,y1) (x2,y2) (x3,y3) (x4,y4)) else 0) 
                 else 0))
 
 
---Programa.areaMaybe1 + Programa.areaMaybe2
 --(1,4) (4,4) (1,1) (4,1) (2,5) (5,5) (2,2) (5,2)
