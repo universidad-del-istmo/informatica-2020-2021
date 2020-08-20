@@ -45,6 +45,6 @@ lista5 =  List.drop 3 lista3
 
 -- A "valorLista3", deben sumarle 41
 -- y agregarlo al principio de
--- "lista5"
+-- "lista3"
 -- Deberia quedarles [42,6,4,1,2,3]
 --lista6 = ?
