@@ -41,12 +41,10 @@ lista5 =  List.drop 3 lista3
 -- 3er valor de "lista3" utilizando
 -- las funciones que se estudiaron en clase
 -- El valor que deberia ser asignado es "Just 1"
-lista3sindos = List.drop 2 lista3 
-valorLista3 = List.head lista3sindos
+valorLista3 = ?
 
 -- A "valorLista3", deben sumarle 41
 -- y agregarlo al principio de
 -- "lista3"
 -- Deberia quedarles [42,6,4,1,2,3]
-valorLista3N = (Maybe.withDefault 0 valorLista3) + 41
-lista6 = valorLista3N :: lista5
+lista6 = ?
