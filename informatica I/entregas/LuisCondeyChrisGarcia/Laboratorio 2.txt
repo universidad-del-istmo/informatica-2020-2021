@@ -1,0 +1,96 @@
+area del circulo
+pi*(r^2)
+C=5
+
+r=C/2pi
+
+
+distancia entre dos puntos
+x1=2
+x2=5
+y1=3
+y2=1
+sqrt (((x2-x1)^2)+((y2-y1)^2))
+
+perimetro de un cuadrado
+l=5
+P=4L
+
+4. Circunferencia del circulo mayor a perimetro del triangulo 
+
+C=2*pi*r
+r=3
+
+P=4L
+L=3
+(2*pi*r)>(4L)
+
+5. area del triangulo
+a=4
+b=4
+c=3
+
+a*b/2>10
+
+C=2*pi*r
+r=7
+(2*pi*r)>20
+
+6. medidas de un triangulo
+a=3
+b=4
+h=5
+
+sqrt ((a^2)+(b^2))==h
+
+a=6
+b=3
+h=9
+sqrt ((a^2)+(b^2))==h
+
+y=x^2+2x
+y1=17
+x1=3
+
+17==(3^2)+(2*3)
+
+y2=35
+x2=5
+35==(5^2)+(2*5)
+
+17==(3^2)+(2*3)(||)35==(5^2)+(2*5)
+y3=63
+x3=7
+63=(7^2)+(2*7)
+
+8. f(x)=4x^2+x
+g(x)=4x^2+x
+
+f(3/4)=(4*((3/4)^2))+(3/4)
+-g(3/4)=-(4*((3/4)^2))-(3/4)
+Comparacion  (4*((3/4)^2))+(3/4)==(-((4*((3/4)^2))-(3/4)))
+
+9.
+
+triangulo 
+c=13
+h=?
+b=c/2
+h=((sqrt 3)/2)*(c)
+h=11.25833025
+A=b*h/2
+At=(13*11.25833025)/2
+
+Area circulo
+C=20
+r=20/2pi
+a=pi*r^2
+r=3.183098861837907 
+Ac=(pi*(3.183098861837907^2))
+
+cuadrado
+L=8
+A=L*L
+A=8*8
+
+R=(pi*(3.183098861837907^2))
