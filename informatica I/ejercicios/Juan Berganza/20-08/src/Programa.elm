@@ -35,7 +35,8 @@ dist (x1,y1) (x2,y2) =
 -- ACEPTA 4 COORDENADAS UBICADAS EN SENTIDO HORARIO
 ladosIguales (x1,y1) (x2,y2) (x3,y3) (x4,y4) =
     dist (x1,y1) (x2,y2) == dist (x2,y2) (x3,y3) &&
-    dist (x2,y2) (x3,y3) == dist (x3,y3) (x4,y4)
+    dist (x2,y2) (x3,y3) == dist (x3,y3) (x4,y4) &&
+    dist (x3,y3) (x4,y4) == dist (x4,y4) (x1,y1)
 
 -- ACEPTA 4 COORDENADAS UBICADAS EN SENTIDO HORARIO
 pendientesCorrectas (x1,y1) (x2,y2) (x3,y3) (x4,y4) =
