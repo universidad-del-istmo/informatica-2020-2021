@@ -41,10 +41,13 @@ lista5 =  List.drop 3 lista3
 -- 3er valor de "lista3" utilizando
 -- las funciones que se estudiaron en clase
 -- El valor que deberia ser asignado es "Just 1"
-valorLista3 = ?
+lista3menos2 = List.drop 2 lista3
+valorlista3 = List.head lista3menos2
 
 -- A "valorLista3", deben sumarle 41
 -- y agregarlo al principio de
--- "lista3"
--- Deberia quedarles [42,6,4,1,2,3]
-lista6 = ?
+-- "lista5"
+-- Deberia quedarles [42,2,3]
+valorlista3n = Maybe.withDefault 0 valorlista3
+valorsuma = valorlista3n + 41
+lista5plus = valorsuma :: lista5

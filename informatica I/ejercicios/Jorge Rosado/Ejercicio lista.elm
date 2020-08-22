@@ -1,4 +1,4 @@
-module Programa exposing (..)
+module Ejercicio lista exposing (..)
 
 valor = 42
 
@@ -41,10 +41,10 @@ lista5 =  List.drop 3 lista3
 -- 3er valor de "lista3" utilizando
 -- las funciones que se estudiaron en clase
 -- El valor que deberia ser asignado es "Just 1"
-valorLista3 = ?
+valorLista3 = List.head(List.drop 2 lista3)
 
 -- A "valorLista3", deben sumarle 41
 -- y agregarlo al principio de
--- "lista3"
+-- "lista5"
 -- Deberia quedarles [42,6,4,1,2,3]
-lista6 = ?
+lista6 = (maybe.withDefault 0 valorLista3 +41)::lista5
