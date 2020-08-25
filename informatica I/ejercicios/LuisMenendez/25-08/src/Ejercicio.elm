@@ -9,6 +9,4 @@ s2 = "23"
 -- la funcion String.toInt para convertir los
 -- strings a numeros enteros
 
-s1Just = String.toInt s1
-s2Just = String.toInt s2
-sumaString = Maybe.withDefault 0 s1Just + Maybe.withDefault 0 s2Just
+sumaString = Maybe.withDefault 0 (String.toInt s1) + Maybe.withDefault 0 (String.toInt s2)
