@@ -17,3 +17,29 @@ s2 = "23"
 -- la funcion String.toInt para convertir los
 -- strings a numeros enteros
 sumaDeStrings = ?
+
+-- sumarHastaN 5 = 1 + 2 + 3 + 4 + 5
+-- sumarHastN 3 = 1 + 2 + 3
+
+sumarHastaNAuxiliar i n =
+    if i == n
+    then n
+    else i + sumarHastaNAuxiliar (i+1) n
+
+sumarHastaN n = sumarHastaNAuxiliar 1 n
+
+-- Intento 1
+-- 1. sumarHastaN 3 = sumarHastaNAuxiliar 1 3
+-- 2. = if 1 == 3 then 3 else 1 + (sumarHastaNAuxiliar (1 + 1) 3
+-- 3. = if (1 + 1) == 3 then 3 else (1 + 1) + (sumarHastaNAuxiliar ((1 + 1) + 1) 3
+-- 4. = if ((1+1)+1) == 3 then 3 else (1 + 1) + 1 + (...)
+
+-- Intendo 2
+-- 1. sumarHastaN 3 = sumarHastaNAuxiliar 1 3
+-- 2. = 1 + (sumarHastaNAuxiliar (1 + 1) 3
+-- Por que 1 == 3 es False
+-- 3. = (1 + 1) + (sumarHastaNAuxiliar ((1 + 1) + 1) 3
+-- Por que (1 + 1) == 3 es False
+-- 4. = 3
+-- Por que ((1 + 1) + 1) == 3 es True
+-- 5. Quedamos con "1 + (1 + 1) + 3"
