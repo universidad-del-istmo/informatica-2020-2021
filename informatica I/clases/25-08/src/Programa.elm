@@ -12,8 +12,11 @@ s1 = "456"
 
 s2 = "23"
 
+
 -- Ejercicio en clase
 -- Calcular la suma de s1 + s2 utilizando
 -- la funcion String.toInt para convertir los
 -- strings a numeros enteros
-sumaDeStrings = ?
+sumaDeStrings = Maybe.withDefault 0 "string.toInt s1" + Maybe.withDefault 0 "string.toInt s2"
+
+
