@@ -1,4 +1,5 @@
-Número 1:
+module Lab2 exposing (..)
+-- Número 1:
 > diametro = 5/pi
 1.5915494309189535 : Float
 > radio = diametro/2
@@ -6,15 +7,15 @@ Número 1:
 > area = (pi * (radio * radio))
 1.9894367886486921 : Float
 
-Número 2:
+-- Número 2:
 > sqrt ((5-2)^2 + (1-3)^2) 
 3.605551275463989 : Float
 
-Número 3:
+-- Número 3:
 > 5+5+5+5
 20 : number
 
-Número 4:
+-- Número 4:
 > diametro = 3 *2
 6 : number
 > circunferencia = diametro * pi
@@ -24,7 +25,7 @@ Número 4:
 > circunferencia > perimetro
 True : Bool
 
-Número 5:
+-- Número 5:
 > s = (4+4+3)/2
 5.5 : Float
 > area1 = sqrt (s *(s-4)*(s-4)*(s-3))                                                            
@@ -34,7 +35,7 @@ Número 5:
 > area1 > 10 || area2 > 20
 True : Bool
 
-Número 6:
+-- Número 6:
 Triángulo 1:
 > lado1 = 3
 3 : number
@@ -63,7 +64,7 @@ True : Bool
 > lado2 + lado3 > lado1
 True : Bool
 
-Número 7:
+-- Número 7:
 y = (x^2) + 2x
 Número 1:
 > ((3^2) + (2*3)) == 17 || ((5^2) + (2*5)) == 35
@@ -72,12 +73,12 @@ Número 2:
 > ((7^2) + (2*7)) == 63
 True : Bool
 
-Número 8:
+-- Número 8:
 > ((4 * (3/4)^2) + 3/4) == ((-1) * (4 * (3/4)^2) + 3/4)
 False : Bool
 
-Número 9:
+-- Número 9:
 (((8 + 8 + 10) / 2) * (13-8) * (13-8) * (13-10)) ^ (1/2)> pi * (15/2) ^ 2
 
-Número 10:
+-- Número 10:
 (20 ^ 2) / (4 * pi)> 8 * 8 || (20 ^ 2) / (4 * pi)> (13 + 13 + 13/2) * (19.5-13) ^ 3
