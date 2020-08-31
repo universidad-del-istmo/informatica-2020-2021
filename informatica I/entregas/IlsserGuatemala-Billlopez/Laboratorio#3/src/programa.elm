@@ -38,3 +38,14 @@ else False
 
 
  --Ejercio#4
+    coordenadas (x1,y1) (x2,y2) (x3,y3) =
+    let
+    a=dist (x1,y1)(x2,y2)
+    b=dist (x2,y2)(x3,y3)
+    c=dist (x1,y1)(x3,y3)
+    in
+    if sqrt(semi*(semi-a)*(semi-b)*(semi-c)) /= 0
+    then Just (sqrt(semi*(semi-a)*(semi-b)*(semi-c)) /2)
+    else Nothing
+
+--Ejercicio#5
