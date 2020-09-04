@@ -1,5 +1,7 @@
 module Lab exposing (..)
 
+-- LABORATORIO 4: 04/09/2020
+
 -- EJERCICIO 1
 
 funcionParImpar n = 
