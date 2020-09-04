@@ -49,3 +49,14 @@ else False
     else Nothing
 
 --Ejercicio#5
+coordenadas (x1,y1) (x2,y2) (x3,y3) (z1,v1) (z2,v2) (z3,v3) =
+    let
+    v1=(x1,y1) (x2,y2) (x3,y3)
+    v2=(z1,v1) (z2,v2) (z3,v3)
+    v3=(x1,y1) (x2,y2) (x3,y3)
+    r4=(z1,v1) (z2,v2) (z3,v3)
+    in
+    if v1== True 
+    && v2 == True
+    then Just(Maybe.withDefault 0 v3 + Maybe.withDefault 0 v4)
+    else Nothing

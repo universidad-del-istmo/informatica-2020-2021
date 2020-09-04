@@ -3,16 +3,16 @@ module Lab4 exposing (..)
 -- Ejercicio 1
 esPar x =
     if remainderBy 2 x == 0 then
-        "Par"
+    "Par"
     else
-        "Impar"
+    "Impar"
 
 -- Ejercicio 2
-mcd a b =
-    if b == 0 then
-        a
+MCD x y=
+    if y == 0 then
+        x
     else
-        mcd b (remainderBy b a)
+        MCD y (remainderBy y x)
 
 -- Ejercicio 3
 esPrimo n =
