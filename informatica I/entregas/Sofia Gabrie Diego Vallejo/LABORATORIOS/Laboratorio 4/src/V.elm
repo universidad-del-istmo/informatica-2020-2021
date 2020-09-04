@@ -7,8 +7,8 @@ module V exposing (..)
 
 parimpar x = 
     if remainderBy 2 x == 0
-    then "par"
-    else "impar"
+    then True
+    else False
 
 
 
