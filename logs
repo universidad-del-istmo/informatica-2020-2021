@@ -1,0 +1,487 @@
+[33mcommit f130803fa7cb82496e669071a0e26c3e8b4d96bd[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Merge: db89f09 48a9c6a
+Author: ZazCaras <ddvallejoj@gmail.com>
+Date:   Tue Aug 4 08:48:15 2020 -0600
+
+    Merge branch 'master' of https://github.com/universidad-del-istmo/informatica-2020-2021
+
+[33mcommit db89f096e9861bf974ecffb2152f814d157275c9[m
+Author: ZazCaras <ddvallejoj@gmail.com>
+Date:   Fri Jul 31 11:41:59 2020 -0600
+
+    prueba otra
+
+[33mcommit b916f22f507ef71434fe7e0861e193f0ffe92686[m
+Author: ZazCaras <ddvallejoj@gmail.com>
+Date:   Fri Jul 31 11:40:52 2020 -0600
+
+    .gitignore agregado
+
+[33mcommit 48a9c6abd3e5f58627f4bac4655fa6e39fcd1442[m[33m ([m[1;31mUNIS/master[m[33m)[m
+Merge: 0e04fdc d4d6785
+Author: netogallo <neto@netowork.me>
+Date:   Fri Jul 31 17:31:00 2020 +0000
+
+    Merge pull request #23 from Rogchiu/master
+    
+    Hola para la tarea
+
+[33mcommit 0e04fdc82fed007f08516d680f4bec4c15c2b4c1[m
+Merge: b699ec0 ff76f6d
+Author: netogallo <neto@netowork.me>
+Date:   Fri Jul 31 17:27:35 2020 +0000
+
+    Merge pull request #7 from nexbox09/master
+    
+    Nombre de integrantes
+
+[33mcommit b699ec077a0424c539c75a00b2fd7a6f697986f6[m
+Merge: 5a552ef c3f1d8d
+Author: netogallo <neto@netowork.me>
+Date:   Fri Jul 31 17:24:12 2020 +0000
+
+    Merge pull request #6 from GustavoMXitamul/master
+    
+    Equipo José Ramos Gustavo Morales
+
+[33mcommit 5a552ef047bd2d8486e1ffcfb9b2172bb786bfda[m
+Merge: db00b46 af7e2df
+Author: netogallo <neto@netowork.me>
+Date:   Fri Jul 31 17:07:57 2020 +0000
+
+    Merge pull request #19 from chrisg0106/master
+    
+    Ejercicio 1 30/07 Christopher Garcia
+
+[33mcommit db00b46d82241cea8628af4841e5bd2d04045a73[m
+Merge: e42d836 e150c6e
+Author: netogallo <neto@netowork.me>
+Date:   Fri Jul 31 17:06:30 2020 +0000
+
+    Merge pull request #5 from Nebury/master
+    
+    Nombre de integrantes
+
+[33mcommit e42d836ec4a575019e5df9254d18a8abf5fbdaf9[m
+Merge: bc49dae 29af201
+Author: netogallo <neto@netowork.me>
+Date:   Fri Jul 31 16:51:16 2020 +0000
+
+    Merge pull request #12 from wuiquique/master
+    
+    Pareja Andres Davila y Luis Menéndez
+
+[33mcommit 538ba03cbd822e44080a85d323f8c94a028b2119[m
+Author: ZazCaras <ddvallejoj@gmail.com>
+Date:   Fri Jul 31 10:44:34 2020 -0600
+
+    commit prueba
+
+[33mcommit bc49dae605cbac3a5b3412b987ea132ebef0a956[m
+Merge: 464b429 5868ceb
+Author: netogallo <neto@netowork.me>
+Date:   Fri Jul 31 16:33:07 2020 +0000
+
+    Merge pull request #21 from jrberganza/master
+    
+    Ejercicio Individual 1 - Juan Berganza
+
+[33mcommit 464b429e09ac49790589dd1003fa759edf32dfea[m
+Merge: 6f87957 191a459
+Author: netogallo <neto@netowork.me>
+Date:   Fri Jul 31 16:31:00 2020 +0000
+
+    Merge pull request #4 from claupons23/master
+    
+    Carpeta de entrega
+
+[33mcommit 191a459188c3da6114d29ffec773d1a535f8336f[m
+Author: claupons23 <claudettepbosch@gmail.com>
+Date:   Thu Jul 30 21:40:00 2020 -0600
+
+    ya listo
+
+[33mcommit d4d67855d8ef0d07ada4d5e44105015f9c090d55[m
+Author: Rogchiu <rmazariegos@unis.edu.gt>
+Date:   Thu Jul 30 19:47:45 2020 -0600
+
+    Ejercicio en clase
+
+[33mcommit 1c61f0cc6ffb5904b65caca3dbd24a9513624b80[m
+Author: Rogchiu <rmazariegos@unis.edu.gt>
+Date:   Thu Jul 30 19:29:18 2020 -0600
+
+    Hola para la tarea
+
+[33mcommit c211053d998406aeeae1d1740964f1a834886c0b[m
+Author: claupons23 <68700506+claupons23@users.noreply.github.com>
+Date:   Thu Jul 30 18:50:43 2020 -0600
+
+    Update hola.txt
+
+[33mcommit 45038d3e18edb90776097167b556a93ad3b662ad[m
+Author: claupons23 <claudettepbosch@gmail.com>
+Date:   Thu Jul 30 18:48:25 2020 -0600
+
+    carpeta de ejercicios
+
+[33mcommit 5868ceb628145ac154a93ba95d59e5c21c5be7b7[m
+Author: jrberganza <68700999+jrberganza@users.noreply.github.com>
+Date:   Thu Jul 30 16:06:49 2020 -0600
+
+    Ejercicio Individual 1
+
+[33mcommit af7e2df1397dc74282ff7726c0e24d1a4e97d2a0[m
+Author: chrisg0106 <chrisg0106@gmail.com>
+Date:   Thu Jul 30 10:38:02 2020 -0600
+
+    ejercicio 2 30/07
+
+[33mcommit 8096f8bc9e11bc6bfd92caece6d6d3ec16edc478[m
+Author: chrisg0106 <chrisg0106@gmail.com>
+Date:   Thu Jul 30 10:26:15 2020 -0600
+
+    ejercicio 30/07
+
+[33mcommit ff76f6d6fef000fc1119e97d754db55fa89f98e2[m
+Author: nexbox09 <68700670+nexbox09@users.noreply.github.com>
+Date:   Thu Jul 30 10:19:32 2020 -0600
+
+    Laboratorio 30 de julio Individual
+
+[33mcommit 7cabd599f30cff22838d2d285015a685f80e5ecc[m
+Author: ZazCaras <ddvallejoj@gmail.com>
+Date:   Thu Jul 30 10:16:41 2020 -0600
+
+    Commit 3007
+
+[33mcommit aed54ea33c013e5479bcb4652c05ea8620073787[m
+Author: nexbox09 <68700670+nexbox09@users.noreply.github.com>
+Date:   Thu Jul 30 10:14:54 2020 -0600
+
+    Laboratorio 30 de julio individual
+
+[33mcommit c3f1d8dc7eafdfb8971a625b16c7c39570558f58[m
+Author: GustavoMXitamul <gamorales@unis.edu.gt>
+Date:   Thu Jul 30 10:14:36 2020 -0600
+
+    Ejercicio con un txt
+
+[33mcommit 7e7d9222eb0e5179b5926f5a0d130e997d4c90ad[m
+Merge: aa50bf7 6f87957
+Author: ZazCaras <ddvallejoj@gmail.com>
+Date:   Thu Jul 30 10:13:29 2020 -0600
+
+    Merge branch 'master' of https://github.com/universidad-del-istmo/informatica-2020-2021
+
+[33mcommit 29af2014552702a176e99531180a349df36247cb[m
+Author: wuiquique <luisenriquem15@gmail.com>
+Date:   Thu Jul 30 10:09:29 2020 -0600
+
+    Ejercicio de clase del 30 de julio
+
+[33mcommit c484deeaea4f23dfb30dc932bd135cb2430da5d6[m
+Author: GustavoMXitamul <gamorales@unis.edu.gt>
+Date:   Thu Jul 30 10:09:01 2020 -0600
+
+    ejercico
+
+[33mcommit 804bad3bc35ddaf001cb1caf5239d2e90992da0e[m
+Merge: 29d5365 6f87957
+Author: GustavoMXitamul <gamorales@unis.edu.gt>
+Date:   Thu Jul 30 10:06:58 2020 -0600
+
+    Merge branch 'master' of https://github.com/universidad-del-istmo/informatica-2020-2021
+
+[33mcommit e150c6e546ee9b151b188a9428739bc8c7954bf1[m
+Author: Nebury <holasoyluis1998@gmail.com>
+Date:   Thu Jul 30 10:06:40 2020 -0600
+
+    Ejercicio 30/7
+
+[33mcommit 08bd71bf4149f560f23b69d0b94b40b138645639[m
+Merge: eb99fd7 6f87957
+Author: nexbox09 <68700670+nexbox09@users.noreply.github.com>
+Date:   Thu Jul 30 10:06:24 2020 -0600
+
+    Merge branch 'master' of https://github.com/universidad-del-istmo/informatica-2020-2021
+
+[33mcommit 95784f531aa2fa6b8482fc3e4d5cef9943b05f61[m
+Merge: 3d22794 6f87957
+Author: chrisg0106 <chrisg0106@gmail.com>
+Date:   Thu Jul 30 10:04:27 2020 -0600
+
+    Merge branch 'master' of https://github.com/universidad-del-istmo/informatica-2020-2021
+
+[33mcommit a5de1376f76bf48e9840187a1ba1d457a276a039[m
+Merge: d28516f 6f87957
+Author: Nebury <holasoyluis1998@gmail.com>
+Date:   Thu Jul 30 10:03:55 2020 -0600
+
+    Merge branch 'master' of https://github.com/universidad-del-istmo/informatica-2020-2021
+
+[33mcommit 33fd4a648b9aad5f9c3995087076434c13256692[m
+Merge: 65ee75e 6f87957
+Author: wuiquique <luisenriquem15@gmail.com>
+Date:   Thu Jul 30 10:03:45 2020 -0600
+
+    Merge branch 'master' of https://github.com/universidad-del-istmo/informatica-2020-2021
+
+[33mcommit 6f87957400641739a55f01b9f2b5775f3f879f3f[m
+Author: Ernesto Rodriguez <erodriguez@unis.edu.gt>
+Date:   Thu Jul 30 16:02:17 2020 +0000
+
+    Definicion del ejercicio
+
+[33mcommit 65ee75ebaaf3fbe3d38df10720119195960aeb05[m
+Merge: 50a8a7f d5931de
+Author: wuiquique <luisenriquem15@gmail.com>
+Date:   Thu Jul 30 09:53:22 2020 -0600
+
+    agregando cambios
+
+[33mcommit d28516fc652a072240a2b988e1f3214a35dbb29d[m
+Merge: ae9a0bf d5931de
+Author: Nebury <holasoyluis1998@gmail.com>
+Date:   Thu Jul 30 09:52:12 2020 -0600
+
+    Merge branch 'master' of https://github.com/universidad-del-istmo/informatica-2020-2021
+
+[33mcommit 29d5365198104e8ae5a85fb96d3e0dcd0c0f49d3[m
+Merge: 85b5d2b d5931de
+Author: GustavoMXitamul <gamorales@unis.edu.gt>
+Date:   Thu Jul 30 09:52:04 2020 -0600
+
+    Merge branch 'master' of https://github.com/universidad-del-istmo/informatica-2020-2021
+
+[33mcommit 3d22794fabbfdc3329c5b495ee3e699fd27ceced[m
+Merge: b907be2 d5931de
+Author: chrisg0106 <chrisg0106@gmail.com>
+Date:   Thu Jul 30 09:50:30 2020 -0600
+
+    Merge branch 'master' of https://github.com/universidad-del-istmo/informatica-2020-2021
+
+[33mcommit d5931de9d06a859276cb622052728fa42fd162e1[m
+Merge: 13ee66b 1b86165
+Author: netogallo <neto@netowork.me>
+Date:   Thu Jul 30 15:50:14 2020 +0000
+
+    Merge pull request #18 from netogallo/master
+    
+    Subir apuntes de la clase
+
+[33mcommit 1b861657f04f666b2cd3c48c2af110b6c79d2c4d[m
+Author: Ernesto Rodriguez <erodriguez@unis.edu.gt>
+Date:   Thu Jul 30 15:44:43 2020 +0000
+
+    Subir apuntes de la clase
+
+[33mcommit eb99fd75ac8babe4e189c1d67dfa515916834282[m
+Author: nexbox09 <68700670+nexbox09@users.noreply.github.com>
+Date:   Thu Jul 30 09:37:04 2020 -0600
+
+    Agregando archivo
+
+[33mcommit aa50bf70b891ce7c477cc5d5f5939c7cd6d53a0f[m
+Author: ZazCaras <ddvallejoj@gmail.com>
+Date:   Thu Jul 30 09:34:17 2020 -0600
+
+    commit asd
+
+[33mcommit bbc348e4a7bb80e513e6283b4c98399bcfce39af[m
+Author: ZazCaras <ddvallejoj@gmail.com>
+Date:   Thu Jul 30 09:20:49 2020 -0600
+
+    prueba
+
+[33mcommit 00352ab210daa68327b06eeeddbba1e047e3fb33[m
+Author: ZazCaras <ddvallejoj@gmail.com>
+Date:   Thu Jul 30 09:19:10 2020 -0600
+
+    commit 7
+
+[33mcommit 04e53d906395d805bd0eac4f57bc9dcc3bbceb16[m
+Merge: 7555342 13ee66b
+Author: claupons23 <claudettepbosch@gmail.com>
+Date:   Thu Jul 30 09:14:22 2020 -0600
+
+    Merge branch 'master' of https://github.com/universidad-del-istmo/informatica-2020-2021
+
+[33mcommit 000339523b3828cebbba25ad5398e25549fbd9cd[m
+Merge: 8078604 68620c8
+Author: ZazCaras <ddvallejoj@gmail.com>
+Date:   Thu Jul 30 09:12:46 2020 -0600
+
+    Merge branch 'master' of https://github.com/ZazCaras/informatica-2020-2021
+
+[33mcommit 68620c8d298197330d620b3504b22c96f2aeb22b[m[33m ([m[1;31mAAA/master[m[33m)[m
+Author: Diego Vallejo <68700441+ZazCaras@users.noreply.github.com>
+Date:   Thu Jul 30 09:12:33 2020 -0600
+
+    Create Nuevo
+
+[33mcommit 85b5d2bc360a480069f12eb4d60367c2947a084b[m
+Merge: d9c220f 13ee66b
+Author: GustavoMXitamul <gamorales@unis.edu.gt>
+Date:   Thu Jul 30 09:06:25 2020 -0600
+
+    Merge branch 'master' of https://github.com/universidad-del-istmo/informatica-2020-2021
+
+[33mcommit b907be24c99caa5bd7cdd3fb8ce2e7003ff11191[m
+Merge: d10c87b 13ee66b
+Author: chrisg0106 <chrisg0106@gmail.com>
+Date:   Thu Jul 30 09:05:59 2020 -0600
+
+    Merge branch 'master' of https://github.com/universidad-del-istmo/informatica-2020-2021
+
+[33mcommit ae9a0bf4f960090afdb3666b39dc6102b383f2aa[m
+Merge: 0f215fe 13ee66b
+Author: Nebury <holasoyluis1998@gmail.com>
+Date:   Thu Jul 30 09:03:39 2020 -0600
+
+    Merge branch 'master' of https://github.com/universidad-del-istmo/informatica-2020-2021
+
+[33mcommit 1aebaa866476d01b25bb8416676e826977d63615[m
+Merge: ad972e1 13ee66b
+Author: nexbox09 <68700670+nexbox09@users.noreply.github.com>
+Date:   Thu Jul 30 09:03:35 2020 -0600
+
+    Merge branch 'master' of https://github.com/universidad-del-istmo/informatica-2020-2021
+
+[33mcommit 13ee66be798e0bf597e29da630528a467760f240[m
+Author: netogallo <neto@netowork.me>
+Date:   Thu Jul 30 15:02:29 2020 +0000
+
+    Create archivonuevo
+
+[33mcommit 50a8a7fbf7e0f8c601011e7692a0158cec3763a4[m
+Merge: 191d777 13ee66b
+Author: wuiquique <luisenriquem15@gmail.com>
+Date:   Thu Jul 30 09:00:05 2020 -0600
+
+    Merge branch 'master' of https://github.com/universidad-del-istmo/informatica-2020-2021
+
+[33mcommit 7555342c8b67efb1698ef1ca164c647f1eb3b632[m
+Merge: c185013 688038f
+Author: claupons23 <claudettepbosch@gmail.com>
+Date:   Tue Jul 28 09:31:21 2020 -0600
+
+    Merge branch 'master' of https://github.com/universidad-del-istmo/informatica-2020-2021
+
+[33mcommit 80786045906b03de014c63c5f06f51479d53f282[m
+Merge: b49e99c 688038f
+Author: ZazCaras <ddvallejoj@gmail.com>
+Date:   Tue Jul 28 09:24:36 2020 -0600
+
+    Merge branch 'master' of https://github.com/universidad-del-istmo/informatica-2020-2021
+
+[33mcommit b49e99c61e69f29e130df82e3e0ca56cd9653e46[m
+Author: ZazCaras <ddvallejoj@gmail.com>
+Date:   Tue Jul 28 09:21:04 2020 -0600
+
+    commit 6
+
+[33mcommit 191d777b516ea61da388cb782f4f64acd4a8b585[m
+Author: wuiquique <luisenriquem15@gmail.com>
+Date:   Fri Jul 24 13:39:12 2020 -0600
+
+    Nombres de los integrantes para la pareja del curso de Informatica 1
+
+[33mcommit 752a4163af0720936183e0cf65d80878c865cb0c[m
+Author: ZazCaras <ddvallejoj@gmail.com>
+Date:   Fri Jul 24 12:51:00 2020 -0600
+
+    commit 5
+
+[33mcommit c1850133457e23c7da4c5fbb9e3c5225af8d7002[m
+Author: claupons23 <claudettepbosch@gmail.com>
+Date:   Fri Jul 24 12:39:38 2020 -0600
+
+    Carpeta de Juan Berganza y Claudette Pons
+
+[33mcommit d9c220f8430c2c6f9eb1e05e374546ce4a4829d3[m
+Author: GustavoMXitamul <gamorales@unis.edu.gt>
+Date:   Fri Jul 24 12:33:53 2020 -0600
+
+    Equipo
+
+[33mcommit b4caa887b31e8d7ca40fd20fd80935496d4cdc03[m
+Author: ZazCaras <ddvallejoj@gmail.com>
+Date:   Fri Jul 24 12:33:29 2020 -0600
+
+    commit 4
+
+[33mcommit a93736d5ebb68060159e73c5d78d0b2841b29a36[m
+Author: claupons23 <claudettepbosch@gmail.com>
+Date:   Fri Jul 24 12:30:36 2020 -0600
+
+    Carpeta de entrega
+
+[33mcommit 90c5d9f5f9b1a352c88d13f9d859765eeb995280[m
+Author: ZazCaras <ddvallejoj@gmail.com>
+Date:   Fri Jul 24 12:20:01 2020 -0600
+
+    commit 3
+
+[33mcommit d10c87bd22fca63d3000f72a2405e54284c8ee81[m
+Author: chrisg0106 <chrisg0106@gmail.com>
+Date:   Fri Jul 24 12:14:41 2020 -0600
+
+    Chrisgarcia
+
+[33mcommit 84e936665829c9b54903b9ed48c692d1af2be94a[m
+Author: wuiquique <luisenriquem15@gmail.com>
+Date:   Fri Jul 24 12:12:11 2020 -0600
+
+    Solo mi nombre, aun sin pareja
+
+[33mcommit ad972e1226734728a8902345eb23d2d9d6ef7793[m
+Author: nexbox09 <68700670+nexbox09@users.noreply.github.com>
+Date:   Fri Jul 24 12:11:50 2020 -0600
+
+    Nombre de integrantes
+
+[33mcommit 7ccdf55afc32c8c37c898b949dfa64d4b649595c[m
+Author: ZazCaras <ddvallejoj@gmail.com>
+Date:   Fri Jul 24 12:11:50 2020 -0600
+
+    commit 2
+
+[33mcommit 0f215fee9b655c16787563c5be68e8643a3bd0f9[m
+Author: Nebury <holasoyluis1998@gmail.com>
+Date:   Fri Jul 24 12:11:16 2020 -0600
+
+    Nombre de integrantes
+
+[33mcommit ab46ece289f0025c16e5c2f26bdbec52a5d09e22[m
+Author: ZazCaras <ddvallejoj@gmail.com>
+Date:   Fri Jul 24 12:07:10 2020 -0600
+
+    Commit 1
+
+[33mcommit 688038fd28b04b91255fdeacedcc9317db8833e0[m
+Merge: 104a439 287463b
+Author: netogallo <neto@netowork.me>
+Date:   Fri Jul 24 11:29:47 2020 -0600
+
+    Merge pull request #1 from netogallo/master
+    
+    Se creo el archivo gitignore para la carpeta de entregas
+
+[33mcommit 287463b665015391a86c7a4abfd1ddc27ab18acf[m
+Author: Ernesto Rodriguez <erodriguez@unis.edu.gt>
+Date:   Fri Jul 24 11:18:42 2020 -0600
+
+    Se creo el archivo gitignore para la carpeta de entregas
+
+[33mcommit 104a439c0ae19430f0c6162d6a3c3cd25bf40853[m
+Author: Ernesto Rodriguez <erodriguez@unis.edu.gt>
+Date:   Thu Jul 23 05:18:20 2020 -0600
+
+    Agregar la informacion general del curlso y pdf del programa del curso
+
+[33mcommit 3bd2c78df7c166d0ce95b7a5ceef43dd5d60cb38[m
+Author: Ernesto Rodriguez <ernesto.rodriguez@quantifio.no>
+Date:   Tue Jun 30 14:44:50 2020 -0600
+
+    GenCS
