@@ -44,17 +44,3 @@ maximo xs =
 -- Just (maximoAux [2,1] 0)
 -- = Just 2
 
-maximoRec xs =
-    case xs of
-    [] -> Nothing
-    b :: bs ->
-        let prev = maximoRec bs
-        in
-            case prev of
-            Nothing -> Just b
-            Just prevValor ->
-                if b > prevValor
-                then Just b
-                else Just prevValor
-
-minYMax bs = ...
