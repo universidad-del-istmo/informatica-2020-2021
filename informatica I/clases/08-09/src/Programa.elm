@@ -57,4 +57,6 @@ maximoRec xs =
                 then Just b
                 else Just prevValor
 
+-- minYMax [0,2,3,1]
+-- (3,0)
 minYMax bs = ...
