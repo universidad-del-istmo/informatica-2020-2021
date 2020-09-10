@@ -57,4 +57,24 @@ maximoRec xs =
                 then Just b
                 else Just prevValor
 
-minYMax bs = ...
+
+minYmax xs =
+    case xs of
+    []-> Nothing
+    b1 :: bs -> Just ((maxiAux bs b1), (minimoAux bs b1) )
+
+maxiAux xs estado =
+    case xs of
+    [] -> estado
+    b :: bs ->
+        if b > estado
+        then maxiAux bs b
+        else maxiAux bs estado
+        
+minimoAux xs estado =
+    case xs of
+    [] -> estado
+    b :: bs ->
+        if b < estado
+        then minimoAux bs b
+        else minimoAux bs estado    
