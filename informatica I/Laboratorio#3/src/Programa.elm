@@ -58,7 +58,7 @@ then ((s*(s-c1)*(s-c2)*(s-c3))^1/2)
 else nothing
 
 --ejercicio 5
-triangulos ()()()) =
+triangulos (x1, y1) (x2,y2) () () () ()   =
 
     
  

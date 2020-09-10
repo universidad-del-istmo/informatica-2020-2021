@@ -1,4 +1,5 @@
 module Programa exposing 
+import Debugger.Overlay exposing (badMetadata)
 
 
 v1 = List.head [1,2,3]
@@ -15,5 +16,21 @@ s2 = "23"
 
 --Ejercicio en clase 
 sumaDeStrings = Maybe.withDefault 0 (String.toInt s1) + Maybe.withDefault 0 (String.toInt s2)
+
+minyMax bs estado =
+    case bs of 
+    [] -> estado 
+    b :: bs ->
+        let nuevoMayor = 
+            nuevoMenor = 
+        in 
+            maximoAux bs (nuevoMayor, nuevoMenor)
+        if b > estado 
+        then maximoAux bs  b
+        else maximoAux bs estado 
+    
+
+type  Lista = Nil | Cons Int Lista 
+
 
 
