@@ -57,7 +57,8 @@ maximoRec xs =
                 then Just b
                 else Just prevValor
 
-
+-- minYMax [0,2,3,1]
+-- (3,0)
 minYmax xs =
     case xs of
     []-> Nothing
@@ -78,3 +79,29 @@ minimoAux xs estado =
         if b < estado
         then minimoAux bs b
         else minimoAux bs estado    
+type Lista = Nil | Cons Int Lista
+-- Nil = []
+-- Cons = ::
+
+listaElmALista xs =
+    case xs of
+    [] -> Nil
+    b :: bs -> Cons b (listaElmALista bs)
+
+listaAListaElm xs =
+    case xs of
+    Nil -> []
+    Cons b bs -> b :: listaAListaElm bs
+
+maximoAuxLista xs estado =
+    case xs of
+    Nil -> estado
+    Cons b bs ->
+        if b > estado
+        then maximoAuxLista bs b
+        else maximoAuxLista bs estado
+
+maximoLista xs =
+    case xs of
+    Nil -> Nothing
+    Cons b bs -> Just (maximoAuxLista bs b)
