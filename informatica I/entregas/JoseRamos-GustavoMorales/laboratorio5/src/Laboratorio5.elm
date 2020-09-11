@@ -15,9 +15,9 @@ mayorAux xs a l =
     case xs of 
     [] -> l
     b :: bs -> 
-            if a >= b 
-            then mayorAux bs a l
-            else b :: mayorAux bs a l
+            if a < b 
+            then b :: mayorAux bs a l
+            else mayorAux bs a l
 
 mayoresQue xs a = mayorAux xs a []
 
@@ -46,14 +46,25 @@ toInt nat =
     Cero -> 0
     Cons nat2 -> 1 + toInt nat2
 
-mayorQue a b  = 
+mayorQueNaturales a b =
     case (a, b) of
-    (Cero, Cero) -> True
-    (Cons ia, Cons ib) -> if toInt (Cons ia) >= toInt (Cons ib) 
-                          then mayorQue Cero Cero 
-                          else mayorQue ia ib 
-    _ -> False
+    (Cons ia, Cons ib) -> mayorQueNaturales ia ib
+    (Cons va, Cero) -> True
+    (Cero, _) -> False
+
 
 --Ejercicio #6
 --Repita el ejercicio #2 pero utilize una lista con *numeros naturales* 
 --en vez de utilizar los numeros incluidos en el lenguaje Elm.
+
+n x = fromInt x
+
+mayorAuxnat xs a l =
+    case xs of 
+    [] -> l
+    b :: bs -> 
+            if mayorQueNaturales b a
+            then b :: mayorAuxnat bs a l
+            else mayorAuxnat bs a l 
+
+mayoresQuenat xs a = mayorAuxnat xs a []
