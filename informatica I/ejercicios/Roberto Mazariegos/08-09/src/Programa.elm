@@ -1,14 +1,23 @@
 module Programa exposing (..)
 
-minyMax bs estado =
-    case bs of 
-    [] -> estado 
+minYMax xs = 
+    case xs of
+    [] -> Nothing
     b :: bs ->
-        let nuevoMayor = (b+1)
-            nuevoMenor = (bs)+2
-        in 
-            maximoAux bs (nuevoMayor, nuevoMenor)
-        if b > estado 
-        then maximoAux bs  b
-        else maximoAux bs estado 
-    
+        Just (maximoAux bs b, minimoAux bs b)
+
+minimoAux xs estado =
+    case xs of
+    [] -> estado
+    b :: bs -> 
+        if b > estado
+        then minimoAux bs b
+        else minimoAux bs estado
+
+maximoAux xs estado =
+    case xs of
+    [] -> estado
+    b :: bs -> 
+        if b < estado
+        then maximoAux bs b
+        else maximoAux bs estado
