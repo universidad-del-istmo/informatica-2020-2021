@@ -44,3 +44,49 @@ maximo xs =
 -- Just (maximoAux [2,1] 0)
 -- = Just 2
 
+<<<<<<< HEAD
+=======
+maximoRec xs =
+    case xs of
+    [] -> Nothing
+    b :: bs ->
+        let prev = maximoRec bs
+        in
+            case prev of
+            Nothing -> Just b
+            Just prevValor ->
+                if b > prevValor
+                then Just b
+                else Just prevValor
+
+-- minYMax [0,2,3,1]
+-- (3,0)
+minYMax bs = ...
+
+type Lista = Nil | Cons Int Lista
+-- Nil = []
+-- Cons = ::
+
+listaElmALista xs =
+    case xs of
+    [] -> Nil
+    b :: bs -> Cons b (listaElmALista bs)
+
+listaAListaElm xs =
+    case xs of
+    Nil -> []
+    Cons b bs -> b :: listaAListaElm bs
+
+maximoAuxLista xs estado =
+    case xs of
+    Nil -> estado
+    Cons b bs ->
+        if b > estado
+        then maximoAuxLista bs b
+        else maximoAuxLista bs estado
+
+maximoLista xs =
+    case xs of
+    Nil -> Nothing
+    Cons b bs -> Just (maximoAuxLista bs b)
+>>>>>>> f058c99800af5eca4d45825a47a88ac91e2bdfbf
