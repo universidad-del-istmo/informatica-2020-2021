@@ -3,7 +3,7 @@ module Programa exposing (..)
 maximoAux xs estado =
     case xs of
     [] -> estado
-    b :: bs ->
+    b :: bs -> 
         if b > estado
         then maximoAux bs b
         else maximoAux bs estado
