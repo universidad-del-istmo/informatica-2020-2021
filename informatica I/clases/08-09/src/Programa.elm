@@ -61,7 +61,7 @@ maximoRec xs =
 
 -- minYMax [0,2,3,1]
 -- (3,0)
-minYMax bs = ...
+-- minYMax bs = ...
 
 type Lista = Nil | Cons Int Lista
 -- Nil = []
