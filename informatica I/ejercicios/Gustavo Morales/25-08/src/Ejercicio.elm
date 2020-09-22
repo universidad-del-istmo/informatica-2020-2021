@@ -17,3 +17,9 @@ s2 = "23"
 -- la funcion String.toInt para convertir los
 -- strings a numeros enteros
 sumaDeStrings = Maybe.withDefault 0 (String.toInt s1) + Maybe.withDefault 0 (String.toInt s2)
+
+sumarHastaNAuxiliar i n =
+ if i == n
+ then n
+ else i + sumarHastaNAuxiliar (i+1)
+ sumarHastaN n = sumarHastaNAuxiliar 1 n 
