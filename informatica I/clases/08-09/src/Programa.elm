@@ -59,10 +59,14 @@ maximoRec xs =
 
 -- minYMax [0,2,3,1]
 -- (3,0)
+<<<<<<< HEAD
 minYmax xs =
     case xs of
     []-> Nothing
     b1 :: bs -> Just ((maxiAux bs b1), (minimoAux bs b1) )
+=======
+-- minYMax bs = ...
+>>>>>>> 395171df4e6fb944f0222ffc9e48d062b8a5104f
 
 maxiAux xs estado =
     case xs of
