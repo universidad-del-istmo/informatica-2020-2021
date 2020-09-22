@@ -3,7 +3,7 @@ module Programa exposing (..)
 maximoAux xs estado =
     case xs of
     [] -> estado
-    b :: bs -> 
+    b :: bs ->
         if b > estado
         then maximoAux bs b
         else maximoAux bs estado
@@ -44,8 +44,6 @@ maximo xs =
 -- Just (maximoAux [2,1] 0)
 -- = Just 2
 
-<<<<<<< HEAD
-=======
 maximoRec xs =
     case xs of
     [] -> Nothing
@@ -61,32 +59,20 @@ maximoRec xs =
 
 -- minYMax [0,2,3,1]
 -- (3,0)
--- minYMax bs = ...
+minYMax lista =
+    case lista of
+    [] -> Nothing
+    h :: resto ->
+        Just (minYMaxAux resto h h)
 
-type Lista = Nil | Cons Int Lista
--- Nil = []
--- Cons = ::
+minYMaxAux lista min max =
+    case lista of
+    [] -> (max, min)
+    h :: resto ->
+        if h < min then
+            minYMaxAux resto h max
+        else if h > max then
+            minYMaxAux resto min h
+        else
+            minYMaxAux resto min max
 
-listaElmALista xs =
-    case xs of
-    [] -> Nil
-    b :: bs -> Cons b (listaElmALista bs)
-
-listaAListaElm xs =
-    case xs of
-    Nil -> []
-    Cons b bs -> b :: listaAListaElm bs
-
-maximoAuxLista xs estado =
-    case xs of
-    Nil -> estado
-    Cons b bs ->
-        if b > estado
-        then maximoAuxLista bs b
-        else maximoAuxLista bs estado
-
-maximoLista xs =
-    case xs of
-    Nil -> Nothing
-    Cons b bs -> Just (maximoAuxLista bs b)
->>>>>>> f058c99800af5eca4d45825a47a88ac91e2bdfbf
