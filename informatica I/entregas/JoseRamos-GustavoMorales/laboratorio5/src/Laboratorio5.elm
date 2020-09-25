@@ -13,7 +13,7 @@ existe xs a =
 
 mayorAux xs a l =
     case xs of 
-    [] -> l
+    [] -> lY
     b :: bs -> 
             if a < b 
             then b :: mayorAux bs a l
@@ -59,7 +59,7 @@ mayorQueNaturales a b =
 
 n x = fromInt x
 
-mayorAuxnat xs a l =
+mayorAuxnat xs a lista =
     case xs of 
     [] -> l
     b :: bs -> 
