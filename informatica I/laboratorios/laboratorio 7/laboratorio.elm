@@ -1,8 +1,8 @@
-module Laboratorio exposing
+module Laboratorio exposing (..)
 
 -- Ejercicio 1: Modifique el tipo Expr para permitirle
 -- expresar tambien Resta y Multiplicacion
-type Expr = Valor Int | Suma Int Int
+type Expr = Valor Int | Suma Expr Expr
 
 -- Ejercicio 2: Modifique la funcion evaluar para que
 -- pueda ser aplicada a su nuevo tipo Expr
@@ -21,7 +21,19 @@ evaluar expr =
 -- numero y debe retornar una lista con todos los valores en
 -- el arbol que sean menores al numero que se dio
 
+-- Ejemplo
+arbol = Rama 1 (Rama 5 (Rama 2 Hoja Hoja) Hoja) (Rama 3 Hoja (Rama 4 Hoja Hoja))
+
+menores = buscarMenoresQue 3 arbol
+-- menores es la lista con valores [1,2]
+
 -- Ejercicio 5: Escriba una funcion llamada "removerUno". Esta
 -- funcion toma un arbol y le remueve un elemento al arbol (puede ser cualquiera).
 -- La funcion debe retornar una pareja con el elemento que fue removido
 -- y el arbol sin el elemento.
+-- En caso que el arbol este vacio (sea Hoja), retornar Nothing
+
+resultado = removerUno
+-- resultado seria algo como por ejemplo: (Just 4, Rama 1 (Rama 5 (Rama 2 Hoja Hoja) Hoja) (Rama 3 Hoja Hoja))
+-- depende de como hayan decidido escoger el valor que se va remover. En este caso se escogio el 4
+-- ya que es el valor que esta en la rama mas profunda del lado derecho
