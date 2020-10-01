@@ -45,6 +45,16 @@ sumarG xs cero sum =
     Nil -> cero
     Cons f1 fs -> sum f1 (sumarG fs cero sum)
 
+-- sumarG (Cons 1 (Cons 2 Nil)) 0 (+)
+-- | xs = (Cons 1 (Cons 2 Nil)), cero = 0, sum = (+)
+-- | f1 = 1, fs = Cons 2 Nil
+-- (+) 1 (sumarG (Cons 2 Nil) 0 (+))
+-- | xs = Cons 2 Nil, cero = 0, sum = (+)
+-- | f1 = 2, fs = Nil
+-- (+) 1 ((+) 2 (sumarG Nil 0 (+)))
+-- | xs = Nil, cero = 0, sum = (+)
+-- (+) 1 ((+) 2 0)
+
 sumarI : Lista Int -> Int
 sumarI xs = sumarG xs 0 (+)
 
@@ -61,4 +71,45 @@ sumarS xs = sumarG xs "" sumaS
 --     (i, Fraccion _ _) -> sumaF (Fraccion i 1) b
 --     (i, j) -> i + j
 
+incrementarTodos xs =
+    case xs of
+    Nil -> Nil
+    Cons b bs -> Cons (b + 1) (incrementarTodos bs)
 
+decrementarTodos xs =
+    case xs of
+    Nil -> Nil
+    Cons b bs -> Cons (b - 1) (decrementarTodos bs)
+
+map f xs =
+    case xs of
+    Nil -> Nil
+    Cons b bs -> Cons (f b) (map f bs)
+
+inc x = x + 1
+
+incrementarTodos2 xs =
+    -- map inc xs
+    map (\x -> x + 1) xs
+
+positivos xs =
+    case xs of
+    Nil -> Nil
+    Cons n ns ->
+        if n >= 0
+        then Cons n (positivos ns)
+        else positivos ns
+
+negativos xs =
+    case xs of
+    Nil -> Nil
+    Cons n ns ->
+        if n < 0
+        then Cons n (negativos ns)
+        else negativos ns
+
+-- Ejercicio: Definir la funcion filter
+filter f xs = filter f xs
+
+positivos2 xs = filter (\n -> n >= 0) xs
+negativos2 xs = filter (\n -> n < 0) xs
