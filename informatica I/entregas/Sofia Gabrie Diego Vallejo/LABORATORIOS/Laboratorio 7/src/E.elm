@@ -25,6 +25,9 @@ evaluar expr =
     Mult a b -> evaluar a * evaluar b
 
 
+sumaex = (Suma (Valor 3) (Valor 5))
+restaex = (Resta (Valor 3) (Valor 5))
+multex = (Mult (Valor 3) (Valor 5))
 
 
 -- Ejercicio 3: Modifique el tipo "Arbol" que se definio
@@ -52,16 +55,11 @@ menores = buscarMenoresQue 3 arbol
 -- menores es la lista con valores [1,2]
 
 
-
---ASK WHY SIGNOS OPUESTOS 
+ 
 buscarMenoresQue x arbolBin  =
     case arbolBin of 
     Hoja -> []
     Rama b bs bss -> if x <= b then (buscarMenoresQue x bs) ++ (buscarMenoresQue x bss) else b :: (buscarMenoresQue x bs) ++ (buscarMenoresQue x bss)
-
-
-
-
 
 
 
@@ -72,6 +70,30 @@ buscarMenoresQue x arbolBin  =
 -- y el arbol sin el elemento.
 -- En caso que el arbol este vacio (sea Hoja), retornar Nothing
 
+
+
+--LLAMADA RECURSIVA = WRONG BUT WHY AAAAAAAA :(( (I DO KNOW WHY PERO COMO SE SOLUCIONA¿¿¿)
+removerUno arbolBi = 
+    case arbolBi of 
+    Hoja -> (Nothing, arbolBi)
+    Rama b bs bss -> case bss of 
+                        Hoja -> case bs of 
+                                   Hoja -> (Just b, Hoja)
+                                   Rama y Hoja Hoja -> (Just y, Rama b Hoja Hoja)
+                                   Rama y ys Hoja -> (removerUno ys)
+                                   Rama y Hoja yss -> (removerUno yss)
+                                   Rama y ys yss -> (removerUno yss)
+                        Rama x Hoja Hoja -> (Just x, Rama b bs Hoja)
+                        Rama x Hoja xss -> (removerUno xss)
+                        Rama x xs Hoja -> (removerUno xs)
+                        Rama x xs xss -> (removerUno xss)
+                    
+
+removerUnoV2 arbolB =
+    case arbolB of 
+    Hoja -> (Nothing, arbolB :: [])
+    Rama y Hoja Hoja -> (Just y, Hoja :: [])
+    Rama y b bs -> (Just y, (b :: bs :: []))
 
 
 resultado = removerUno
