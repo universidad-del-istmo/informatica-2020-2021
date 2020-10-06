@@ -71,22 +71,15 @@ buscarMenoresQue x arbolBin  =
 -- En caso que el arbol este vacio (sea Hoja), retornar Nothing
 
 
-
---LLAMADA RECURSIVA = WRONG BUT WHY AAAAAAAA :(( (I DO KNOW WHY PERO COMO SE SOLUCIONA¿¿¿)
 removerUno arbolBi = 
     case arbolBi of 
     Hoja -> (Nothing, arbolBi)
-    Rama b bs bss -> case bss of 
-                        Hoja -> case bs of 
-                                   Hoja -> (Just b, Hoja)
-                                   Rama y Hoja Hoja -> (Just y, Rama b Hoja Hoja)
-                                   Rama y ys Hoja -> (removerUno ys)
-                                   Rama y Hoja yss -> (removerUno yss)
-                                   Rama y ys yss -> (removerUno yss)
-                        Rama x Hoja Hoja -> (Just x, Rama b bs Hoja)
-                        Rama x Hoja xss -> (removerUno xss)
-                        Rama x xs Hoja -> (removerUno xs)
-                        Rama x xs xss -> (removerUno xss)
+    Rama b Hoja Hoja -> (Just b, Hoja)
+    Rama b bs bss -> case (removerUno bs, removerUno bss) of    
+                        ((Just v, arbolA), _) -> (Just v, Rama b arbolA bss)
+                        ((Nothing, _), (Just v, arbolA)) -> (Just v, (Rama b arbolA bs))
+                        _ -> (Nothing, arbolBi)
+                            
                     
 
 removerUnoV2 arbolB =
