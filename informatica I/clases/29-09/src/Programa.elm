@@ -17,7 +17,7 @@ valor i xs =
 
 type Fraccion = Fraccion Int Int
 
-fracciones = Cons (Fraccion 1 2) (Cons (Fraccion 1 3) (Cons (Fraccion 1 4) Nil))
+ejemplof1 = Cons (Fraccion 1 2) (Cons (Fraccion 1 3) (Cons (Fraccion 1 4) Nil))
 
 sumaF (Fraccion n1 d1) (Fraccion n2 d2) =
     Fraccion (n1*d2 + n2 * d1) (d1 * d2)
