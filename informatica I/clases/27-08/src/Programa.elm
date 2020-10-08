@@ -51,3 +51,10 @@ fibRapido n =
     else if n == 1
     then 1
     else fibAux n 2 1 0
+
+sumaAux xs total =
+    case xs of
+    [] -> total
+    b :: bs -> sumaAux bs (b + total)
+
+suma xs = sumaAux xs 0
