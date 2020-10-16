@@ -108,6 +108,7 @@ negativos xs =
         then Cons n (negativos ns)
         else negativos ns
 
+
 -- Ejercicio: Definir la funcion filter
 filter f xs = filter f xs
 
