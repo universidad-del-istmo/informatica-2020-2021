@@ -1,7 +1,5 @@
 module Programa exposing (..)
-import Maybe
-import Maybe
-import Maybe
+
 
 divisionOpcion numerador denominador =
     if denominador == 0
