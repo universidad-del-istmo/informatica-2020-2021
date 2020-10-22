@@ -62,7 +62,8 @@ sumarAux x h s =
 
 -- EJERCICIO 6
 
-positivos n =
-    if n == 0 || n == 1
-    then []
-    else List.range 1 (n - 1)
+positivo n =
+    case n of
+    0 -> []
+    1 -> []
+    b -> (b - 1) :: positivo (b - 1)
