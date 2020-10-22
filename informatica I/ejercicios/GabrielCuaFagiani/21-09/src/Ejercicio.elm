@@ -1,4 +1,4 @@
-module Programa exposing (..)
+module Ejercicio exposing (..)
 
 type ListaI = NilI | ConsI Int ListaI
 
@@ -45,5 +45,10 @@ sumatoriaFrac xs =
     Nil -> Fraccion 0 1
     Cons b bs -> sumar b (sumatoriaFrac bs)
 
+-- EJERCICIO EN CLASE
 -- Calcula la longitud de un valor de tipo (Lista a)
-longitud xs = ?
+
+longitud xs =
+    case xs of
+    Nil -> 0
+    Cons _ bs -> 1 + longitud bs
