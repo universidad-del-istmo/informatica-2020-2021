@@ -1,19 +1,56 @@
 module Proyecto exposing (..)
 
--- 1. COPO DE NIEVE DE KOCH
+-- 2. TRIÁNGULO DE SIERPINSKI
 
-coordenada1 = (0,0)
-coordenada2 = (45,77.94228724)
-coordenada3 = (90,0)
+-- Fórmula que genera el triángulo inicial:
 
-distancia (x1,y1) (x2,y2) = sqrt ( (x2-x1)^2 + (y2-y1)^2 )
+tri x y l =
+    [(x, y), ((x + l/2), y + (sin (pi/3))*l), ((x + l, y))]
 
-snowflake n =
-    case n of
-    0 -> [coordenada1, coordenada2, coordenada3]
-    x -> snowflakeAux n coordenada1 coordenada2 coordenada3
+-- Triángulo inicial (Recursión 0):
 
-snowflakeAux (c1, c1) (c2, c2) (c3, c3) =
-    case (c1, c1) (c2, c2) (c3, c3) of
-    () -> []
-    (x1, y1) (x2, y2) (x3, y3) -> ((distancia (x1, y1) (x2, y2)) * (1/6))
+triangulo = tri 2 2 50
+
+-- Función recursiva (Genera más triángulos en base al inicial):
+
+dividir x y l n m =
+    if n == m
+    then [tri x y l]
+    else
+        (dividir x y (l/2) (n+1) m) ++ 
+        (dividir (x +(l/2)) y (l/2) (n+1) m) ++
+        (dividir (x +(l/4)) (y + (sin (pi/3))*(l/2)) (l/2) (n+1) m)
+
+-- Función que acepta un número entero como parámetro y genera una
+-- lista de las coordenadas de los triángulos generados recursiva-
+-- mente en la función "dividir":
+
+sierpinski x = dividir 0 0 90 0 x
+
+-- 3. CUADRADO DE MAURINSKI
+
+-- Fórmula que genera el cuadrado inicial:
+
+cua x y l =
+    [(x, y), (x, (y + l)), ((x + l,y + l)), ((x + l), y)]
+
+-- Cuadrado inicial (Recursión 0):
+
+cuadrado = cua 0 0 50
+
+-- Función recursiva (Genera más cuadrados en base al inicial):
+
+division x y l n m =
+    if n == m
+    then [cua x y l]
+    else
+        (division x y (l/2) (n + 1) m) ++
+        (division (x + (l/2)) y (l/2) (n + 1) m) ++
+        (division x (y + (l/2)) (l/2) (n + 1) m) ++
+        (division (x + (l/2)) (y + (l/2)) (l/2) (n + 1) m)
+
+-- Función que acepta un número entero como parámetro y genera una
+-- lista de las coordenadas de los cuadrados generados recursiva-
+-- mente en la función "division":
+
+maurinski x = division 0 0 50 0 x       
