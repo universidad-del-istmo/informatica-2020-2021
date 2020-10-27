@@ -46,4 +46,11 @@ sumatoriaFrac xs =
     Cons b bs -> sumar b (sumatoriaFrac bs)
 
 -- Calcula la longitud de un valor de tipo (Lista a)
-longitud xs = ?
+
+longitudaux xs xss = 
+    case xs of
+    Nil -> xss
+    Cons b bs -> longitudaux bs (xss +1)
+
+longitud xs =
+    longitudaux xs 0

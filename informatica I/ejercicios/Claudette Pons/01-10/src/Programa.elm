@@ -108,9 +108,16 @@ negativos xs =
         then Cons n (negativos ns)
         else negativos ns
 
-
 -- Ejercicio: Definir la funcion filter
-filter f xs = filter f xs
+filter f xs =
+    case xs of
+    Nil -> Nil
+    Cons n ns -> 
+        if f n
+        then Cons n (filter f ns)
+        else filter f ns
+        
 
 positivos2 xs = filter (\n -> n >= 0) xs
 negativos2 xs = filter (\n -> n < 0) xs
+
