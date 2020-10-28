@@ -1,39 +1,39 @@
 module Ejer exposing (..)
 
 import Browser
-import Html exposing (Html, input, div, p, text)
+import Html exposing (Html, input, div, p, text, button)
 import Html.Attributes exposing (style, type_)
 import Html.Events exposing (onClick, onInput)
 
-type Modelo = Modelo String
+type Modelo = Modelo String String
 
 type Accion =
-    Actualizar String
+    Mensaje | Actualizar String 
 
-actualizador : Accion -> Modelo -> Modelo
-actualizador (Actualizar accion) (Modelo _) =
-    Modelo accion
+actualizador accion (Modelo msg1 msg2) =
+    case accion of 
+    Mensaje -> Modelo msg2 msg2
+    Actualizar msg -> Modelo msg1 msg
 
 -- Ejercicio:
 -- Modificar el codigo tal que el texto no cambie hasta
 -- que el usuario haya hecho click en un boton que actualize
 -- el texto.
 
-vista (Modelo mensaje) =
+vista (Modelo msg1 msg2) =
     div
     []
     [
-        p [] [text mensaje],
+        p [] [text msg1],
         -- Documentacion del componente input
         -- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#attr-type
         input
         [
-            type_ "text",
-            onInput Actualizar
-        ]
-        []
+            type_ "text", onInput Actualizar 
+        ] [],
+        button [onClick (Mensaje)] [text "Mensaje"]     
     ]
 
-inicial = Modelo "hola"
+inicial = Modelo "type something" "bru"
 
 main = Browser.sandbox { init = inicial, update = actualizador, view = vista }
