@@ -9,8 +9,6 @@ import Browser
 import Html exposing (..)
 import Html.Attributes exposing (style)
 
-------------------
-
 -- Funciones para determinar si un número es primo:
 
 numeros = List.range 1 100
@@ -36,7 +34,7 @@ funcionParImpar n =
     then "Par"
     else "Impar"
 
-------------------
+-- Funciones para convertir a type Html:
 
 intToHtml n = 
     if funcionParImpar n == "Par"
@@ -57,7 +55,7 @@ intToHtml n =
 
 map = List.map intToHtml (List.range 1 100)
 
-------------------
+-- Funciones de la interfaz gráfica:
 
 main = Browser.sandbox { init = inicial, update = actualizar, view = vista }
 
