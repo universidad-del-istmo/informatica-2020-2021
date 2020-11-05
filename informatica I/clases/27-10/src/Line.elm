@@ -28,7 +28,7 @@ crearLineas coords =
                 stroke "black"
             ]
             []
-        :: crearLineas xs ((c,d) :: xs)
+        :: crearLineas ((c,d) :: xs)
     _ -> []
 
 vista (Modelo t) =
