@@ -18,3 +18,6 @@ Para poder compilar Quaternion se necesitan las siguientes herramientas:
 2. Abrir el archvo "CMakeLists.txt" y cambiar "add_executable(${PROJECT_NAME} WIN32 MACOSX_BUNDLE" a "add_executable(${PROJECT_NAME} MACOSX_BUNDLE" (aproximadamente en la linea 222)
 3. `cmake -G "MinGW Makefiles" ..`
 4. `cmake --build . --target all`
+
+### Docmentacion
+1. QT 5: (https://doc.qt.io/qt-5/search-results.html?q=QResizeEvent)[https://doc.qt.io/qt-5/search-results.html?q=QResizeEvent]
