@@ -8,6 +8,8 @@ class Lista {
     Lista(int valor, Lista* resto);
     Lista(int valor);
 
+    ~Lista();
+
     int get_valor();
 
     Lista* get_resto();
@@ -19,6 +21,10 @@ class Lista {
     encadenada.
     */
     int sumatoria();
+
+    int largo();
+
+    int operator[](std::size_t ix);
 
     private:
     int _valor;
