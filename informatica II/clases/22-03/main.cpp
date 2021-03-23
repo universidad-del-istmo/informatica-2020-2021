@@ -32,11 +32,47 @@ int main(int argc, char** argv) {
 
 
     int resultado;
-    if(l.tryGet(12, resultado)) {
+    if(l.tryGet(1, resultado)) {
 
         std::cout << "El el valor es: " << resultado << "\n";
     }
     else {
         std::cout << "El indice no existe \n";
     }
+
+    int x;
+    l.tryGet(2, x);
+
+    std::cout << "El valor de x es " << x << "\n";
+    std::cout << "El valor de resultado es " << resultado << "\n";
+
+    std::cout << "El indice 0 es: " << l[1] << "\n";
+
+    l[1] = 42;
+
+    std::cout << "El indic 0 es: " << l[1] << "\n";
+
+    Lista l2 = l;
+    int ix = 1;
+
+    //l[ix] = 3;
+
+    std::cout << "Lista 1: " << l[ix] << "\n";
+    std::cout << "Lista 2: " << l2[ix] << "\n";
+
+
+    if(l == l2) {
+        std::cout << "son iguales \n";
+    }
+    else {
+        std::cout << "no son iguales \n";
+    }
+
+    if(l > l2) {
+        std::cout << "si es mayor \n";
+    }
+    else {
+        std::cout << "no es mayor \n";
+    }
+
 }

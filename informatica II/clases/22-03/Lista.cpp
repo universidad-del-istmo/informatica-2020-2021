@@ -6,6 +6,22 @@ Lista::Lista(int valor, Lista* resto) : _valor(valor), _resto(resto) {}
 
 Lista::Lista(int valor) : _valor(valor), _resto(nullptr) {}
 
+Lista::Lista(const Lista& otra) : _valor(otra._valor) {
+
+    Lista* restoPtr = otra._resto;
+
+    if(restoPtr != nullptr) {
+        _resto = new Lista(*restoPtr);
+    }
+    else {
+        _resto = nullptr;
+    }
+
+    std::cout << "Se esta copiando\n";
+
+}
+
+
 Lista::~Lista() {
 
     delete _resto;
@@ -50,7 +66,7 @@ int Lista::largo() {
     return resultado;
 }
 
-int Lista::operator[](std::size_t ix) {
+int& Lista::operator[](std::size_t ix) {
 
     Lista* valor = this;
 
@@ -66,7 +82,7 @@ int Lista::operator[](std::size_t ix) {
     return valor->_valor;
 }
 
-bool Lista::tryGet(std::size_t ix, int& resultado) {
+bool Lista::tryGet(std::size_t ix, int& respuesta) {
 
     Lista* valor = this;
 
@@ -79,9 +95,26 @@ bool Lista::tryGet(std::size_t ix, int& resultado) {
         valor = valor->_resto;
     }
 
-    resultado = valor->_valor;
+    respuesta = valor->_valor;
 
     return true;
+}
+
+bool Lista::operator==(const Lista& otra) {
+
+    if(_valor != otra._valor) {
+        return false;
+    }
+
+    if(_resto == nullptr && otra._resto == nullptr) {
+        return true;
+    }
+
+    if(_resto == nullptr || otra._resto == nullptr) {
+        return false;
+    }
+
+    return *_resto == *otra._resto;
 }
 
 void Lista::byValue(int valor, std::string st) {
