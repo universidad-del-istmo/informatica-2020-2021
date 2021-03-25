@@ -114,7 +114,10 @@ bool Lista::operator==(const Lista& otra) {
         return false;
     }
 
-    return *_resto == *otra._resto;
+    Lista& l1 = *_resto;
+    Lista& l2 = *otra._resto;
+
+    return l1 == l2;
 }
 
 void Lista::byValue(int valor, std::string st) {
