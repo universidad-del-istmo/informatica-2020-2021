@@ -11,10 +11,10 @@ int main(int argc, char** argv) {
 
     /*
     Cree un metodo en la clase diccionaro llamado "agregar" el cual permite
-    guardar una palabra y una definicion de la palara. Si la definicion ya
-    existe, actualiar la definicion. Se recomienda utilizar dos arreglos de
+    guardar una palabra y una definicion de la palabra. Si la definicion ya
+    existe, actualizar la definicion. Se recomienda utilizar dos arreglos de
     "std::string" para guardar la palabra y definiion de tal forma que la
-    definicion y palabra tengan el mismo indicie en ambos arreglos. En caso
+    definicion y palabra tengan el mismo indice en ambos arreglos. En caso
     que los arreglos ya no puedan almacenar mas palabras y definiciones,
     se debe crear un arreglo nuevo con mayor tamaño, copiar las palabras y
     definiciones a este nuevo arreglo y borrar el arreglo anterior. A
