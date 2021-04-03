@@ -5,6 +5,7 @@
 class Lista {
 
     public:
+
     Lista(int valor, Lista* resto);
     Lista(int valor);
     Lista(const Lista& otra);
@@ -17,15 +18,13 @@ class Lista {
 
     std::string to_string();
 
-    /*
-    Sumar todos los valores ue hay en la lista
-    encadenada.
-    */
     int sumatoria();
 
     int largo();
 
     int& operator[](std::size_t ix);
+
+    // Aquí empiezan los cambios de la clase del 22-03...
 
     bool tryGet(std::size_t ix, int& resultado);
 
@@ -35,7 +34,10 @@ class Lista {
 
     bool operator==(const Lista& otra);
 
+    bool operator>(const Lista& otra);
+
     private:
+
     int _valor;
 
     Lista* _resto;

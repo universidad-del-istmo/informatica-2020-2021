@@ -9,70 +9,88 @@ int main(int argc, char** argv) {
     std::cout << l.to_string() << "\n";
     std::cout << l.largo() << "\n";
 
-    std::cout << "el elemento 1 es " << l[0] << "\n";
+    // Se puede usar este std::cout gracias al operator[].
+
+    std::cout << "El elemento 1 es " << l[0] << "\n";
+
+    // Aquí empiezan los cambios de la clase del 22-03...
+
+    // Ejemplo de variables por valor:
 
     int byValue = 0;
-    std::string sValue = "hola mundo";
+    std::string sValue = "Hola mundo";
 
-    std::cout << "by value before " << byValue << ", " << sValue << "\n";
+    std::cout << "byValue antes: " << byValue << ", " << sValue << "\n";
 
     l.byValue(byValue, sValue);
 
-    std::cout << "by value after " << byValue << ", " << sValue << "\n";
+    std::cout << "byValue despues: " << byValue << ", " << sValue << "\n";
 
+    // Ejemplo de variables por referencia:
 
     int byRef = 0;
-    std::string sRef = "hola mundo";
+    std::string sRef = "Hola mundo";
 
-    std::cout << "by ref before " << byRef << ", " << sRef << "\n";
+    std::cout << "byRef antes: " << byRef << ", " << sRef << "\n";
 
     l.byReference(byRef, sRef);
 
-    std::cout << "by ref after " << byRef << ", " << sRef << "\n";
+    std::cout << "byRef despues: " << byRef << ", " << sRef << "\n";
 
+    // Ejemplo del método tryGet por referencia:
 
     int resultado;
+
     if(l.tryGet(1, resultado)) {
 
-        std::cout << "El el valor es: " << resultado << "\n";
+        std::cout << "El valor es: " << resultado << "\n";
     }
     else {
         std::cout << "El indice no existe \n";
     }
 
+    // Ejemplo del método tryGet por valor:
+
     int x;
+
     l.tryGet(2, x);
 
     std::cout << "El valor de x es " << x << "\n";
     std::cout << "El valor de resultado es " << resultado << "\n";
 
+    // Otros ejemplos:
+
     std::cout << "El indice 0 es: " << l[1] << "\n";
 
     l[1] = 42;
 
-    std::cout << "El indic 0 es: " << l[1] << "\n";
+    std::cout << "El indice 0 es: " << l[1] << "\n";
+
+    // Ejemplo del operator==:
 
     Lista l2 = l;
-    int ix = 1;
+    //Lista l2(1, new Lista(2));
+    //Lista l2(1, new Lista(2, new Lista(3, new Lista (4))));
 
-    //l[ix] = 3;
+    int ix = 1;
 
     std::cout << "Lista 1: " << l[ix] << "\n";
     std::cout << "Lista 2: " << l2[ix] << "\n";
 
-
     if(l == l2) {
-        std::cout << "son iguales \n";
+        std::cout << "Son iguales \n";
     }
     else {
-        std::cout << "no son iguales \n";
+        std::cout << "No son iguales \n";
     }
+
+    // Ejemplo del operator>:
 
     if(l > l2) {
-        std::cout << "si es mayor \n";
+        std::cout << "Es mayor \n";
     }
     else {
-        std::cout << "no es mayor \n";
+        std::cout << "No es mayor \n";
     }
 
 }

@@ -9,5 +9,7 @@ int main(int argc, char** argv) {
     std::cout << l.to_string() << "\n";
     std::cout << l.largo() << "\n";
 
-    std::cout << "el elemento 1 es " << l[12] << "\n";
+    // Se puede usar este std::cout gracias al operator[].
+    
+    std::cout << "El elemento 1 es " << l[1] << "\n";
 }
