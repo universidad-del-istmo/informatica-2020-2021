@@ -24,7 +24,9 @@ class Lista {
     bool tryGet(std::size_t ix, int& resultado);
 
     bool operator==(const Lista& otra);
-    
+
+    void eliminar(int i);
+
     void terminar();
 
     protected:

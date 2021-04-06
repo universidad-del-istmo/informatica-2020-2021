@@ -18,6 +18,9 @@ int main(int argc, char** argv) {
 
     p.push(1);
     p.push(2);
+    p.push(3);
+
+    p.eliminar(0);
 
     std::cout << "Pop! " << p.pop() << "\n";
     std::cout << "Pop! " << p.pop() << "\n";
