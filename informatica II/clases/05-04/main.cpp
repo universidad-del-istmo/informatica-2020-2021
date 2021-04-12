@@ -20,6 +20,8 @@ int main(int argc, char** argv) {
     p.push(2);
     p.push(3);
 
+    std::cout << "Valor 0 es:" << p[0] << "\n";
+
     p.eliminar(0);
 
     std::cout << "Pop! " << p.pop() << "\n";
