@@ -2,6 +2,8 @@
 
 #include <iostream>
 
+// Método constructor:
+
 Lista::Lista(int valor, Lista* resto) : _valor(valor), _resto(resto) {}
 
 Lista::Lista(int valor) : _valor(valor), _resto(nullptr) {}
