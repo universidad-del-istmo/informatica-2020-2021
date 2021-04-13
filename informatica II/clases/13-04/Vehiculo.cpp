@@ -2,8 +2,11 @@
 
 #include <iostream>
 
-Vehiculo::Vehiculo(const Mapa& mapa, const int posX, const int posY) : _mapa(mapa), _posX(posX), _posY(posY) {
+Vehiculo::Vehiculo(const Mapa& mapa) : _mapa(mapa), _posX(0), _posY(0) {}
 
+bool Vehiculo::colocarVehiculo() {
+
+    return posicionInicial(_posX, _posY);
 }
 
 bool Vehiculo::mover(const Direccion direccion) {
@@ -57,8 +60,14 @@ void Vehiculo::imprimir() {
             if(i == _posX && j == _posY) {
                 std::cout << "X";
             }
+            else if(_mapa[i][j] == Terreno::Agua) {
+                std::cout << '~';
+            }
+            else if(_mapa[i][j] == Terreno::Calle){
+                std::cout << '=';
+            }
             else {
-                std::cout << _mapa[i][j];
+                std::cout << '#';
             }
         }
 

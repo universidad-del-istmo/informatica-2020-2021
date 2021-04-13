@@ -3,8 +3,9 @@
 class Jeep : public Vehiculo {
 
     public:
-    Jeep(const Mapa& mapa, const int posX, const int posY);
+    Jeep(const Mapa& mapa);
 
     protected:
     bool puedeNavegarHacia(const int i, const int j) override;
+    bool posicionInicial(int& posX, int& posY) override;
 };

@@ -1,8 +1,53 @@
 #include <iostream>
 
+#include "Helicoptero.hh"
+#include "Jeep.hh"
 #include "Mapa.hh"
 #include "Vehiculo.hh"
-#include "Jeep.hh"
+
+void manejar(IVehiculo vehiculo) {
+
+    /*
+    Para los curiosos que querian saber que se esta manejando,
+    asi se hace...
+    */
+    Helicoptero* h = dynamic_cast<Helicoptero*>(&vehiculo);
+
+    if(h != nullptr) {
+        std::cout << "Es un helicoptero...\n";
+    }
+    else {
+        std::cout << "No es un helicoptero...\n";
+    }
+
+    vehiculo.colocarVehiculo();
+    vehiculo.imprimir();
+
+    char accion = '\0';
+
+    while(accion != 'q') {
+
+        std::cin >> accion;
+
+        switch(accion) {
+
+            case 'w':
+                vehiculo.mover(Direccion::Arriba);
+                break;
+            case 's':
+                vehiculo.mover(Direccion::Abajo);
+                break;
+            case 'a':
+                vehiculo.mover(Direccion::Izquierda);
+                break;
+            case 'd':
+                vehiculo.mover(Direccion::Derecha);
+                break;
+        }
+
+        vehiculo.imprimir();
+    }
+}
 
 int main(int argc, char** argv) {
 
@@ -30,34 +75,13 @@ int main(int argc, char** argv) {
         }
     }
 
+    //std::cout << "Quiere manejar un (j)eep, un (h)elicoptero o (s)alir?"
+
     Mapa mapa(terreno, largo, alto);
-    Jeep vehiculo(mapa, 0, 0);
+    Jeep vehiculo(mapa);
 
-    vehiculo.imprimir();
+    manejar(vehiculo);
 
-    char accion = '\0';
-
-    while(accion != 'q') {
-
-        std::cin >> accion;
-
-        switch(accion) {
-
-            case 'w':
-                vehiculo.mover(Direccion::Arriba);
-                break;
-            case 's':
-                vehiculo.mover(Direccion::Abajo);
-                break;
-            case 'a':
-                vehiculo.mover(Direccion::Izquierda);
-                break;
-            case 'd':
-                vehiculo.mover(Direccion::Derecha);
-                break;
-        }
-
-        vehiculo.imprimir();
-    }
-
+    Helicoptero helicoptero(mapa);
+    manejar(helicoptero);
 }
