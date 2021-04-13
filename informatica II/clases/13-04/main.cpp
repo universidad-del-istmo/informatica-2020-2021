@@ -16,8 +16,13 @@ int main(int argc, char** argv) {
 
         for(int j = 0; j < alto; j++) {
 
-            if(j % 2 == 0){
+            int ix = i + j;
+
+            if(ix % 2 == 0){
                 terreno[i][j] = Terreno::Tierra;
+            }
+            else if(ix % 3) {
+                terreno[i][j] = Terreno::Calle;
             }
             else {
                 terreno[i][j] = Terreno::Agua;
