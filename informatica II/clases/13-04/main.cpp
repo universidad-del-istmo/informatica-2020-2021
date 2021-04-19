@@ -5,7 +5,7 @@
 #include "Mapa.hh"
 #include "Vehiculo.hh"
 
-void manejar(IVehiculo vehiculo) {
+void manejar(IVehiculo& vehiculo) {
 
     /*
     Para los curiosos que querian saber que se esta manejando,
