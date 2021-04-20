@@ -28,8 +28,6 @@ class Array {
 
     T& operator[](const std::size_t i) {
 
-        _valores[i] = nuevo;
-
         return _valores[i];
     }
 
