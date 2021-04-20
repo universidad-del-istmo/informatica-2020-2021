@@ -5,8 +5,13 @@
 class Vector {
 
     public:
-    Vector(int x, int y) : _x(x), _y(x) {}
+    Vector(int x, int y) : _x(x), _y(y) {}
     Vector() : _x(0), _y(0) {}
+
+    int x() const;
+    int y() const;
+
+    bool operator==(const Vector& other) const;
 
     private:
     int _x;
@@ -22,6 +27,8 @@ class Array {
     , _valores(new T[size]) {}
 
     T& operator[](const std::size_t i) {
+
+        _valores[i] = nuevo;
 
         return _valores[i];
     }
