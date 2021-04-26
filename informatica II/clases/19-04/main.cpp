@@ -2,6 +2,7 @@
 #include <string>
 
 #include "Array.hh"
+#include "Dictionary.hh"
 
 int main(int argc, char** argv) {
 
@@ -30,9 +31,20 @@ int main(int argc, char** argv) {
     Array<Vector> vecs(3);
 
     vecs[0] = Vector(1,4);
-    Vector v2(1,1);
+    Vector v2(1,4);
 
     if(!vecs.existe(v2)) {
         std::cout << "no existe (1,1) \n";
     }
+
+    Dictionary<int, std::string> d;
+    d.add(42, "hola");
+    d.add(55, "adios");
+    // o
+    d[42] = "hola";
+
+    std::cout << "El indice \"42\" es: " << d[42] << "\n";
+
+    Dictionary<std::string, int> d2;
+    d2["hola"] = 42;
 }
