@@ -28,6 +28,8 @@ class Lista {
 
     bool operator>(const Lista& otra);
 
+    void eliminar(int i);
+
     void getNull(); // Borra 
 
     protected: // Lista y métodos que hereden de Lista

@@ -15,4 +15,4 @@ Cree una clase que representa un *espacio vectorial de dos dimensiones*. Esta cl
 
 * Implemente un metodo llamado *seleccionar* que acepta 3 valores de tipo *float* llamados "x", "y" y "r". Este metodo tambien debe aceptar como parametro un array de floats y el tamaño del mismo. El metodo debe almacenar en el array todos los valores que se encuentren dentro del circulo que se paso como prametro. Si no hay suficientes valores para llenar el array, se colocan ceros en las demas posiciones.
 
-* Implemente un metodo que se llame "trasladar" este metodo acepta 2 valores de tipo *float* y debe mover la ubicacion de todos los valors en el espacio vectorial por esa cantidad en el eje "x" y "y".
+* Implemente un metodo que se llame "trasladar" este metodo acepta 2 valores de tipo *float* y debe mover la ubicacion de todos los valors en el espacio vectorial por esa cantidad en el eje "x" y "y". 

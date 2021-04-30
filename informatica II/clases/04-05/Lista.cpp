@@ -72,6 +72,32 @@ int Lista::largo() {
     return resultado;
 }
 
+void Lista::eliminar(int i) {
+
+    Lista* actual = this;
+    Lista* previo = nullptr;
+
+    for(int j = 0; j < i; j++) {
+        previo = actual;
+        actual = actual->_resto;
+    }
+
+    if(previo == nullptr) {
+        Lista* tmp = _resto;
+
+        _valor = _resto->_valor;
+        _resto = _resto->_resto;
+
+        tmp->getNull();
+        delete tmp;
+        return; 
+    }
+
+    previo->_resto = actual->_resto;
+    actual->getNull();
+    delete actual;
+}
+
 int& Lista::operator[](std::size_t ix) {
 
     Lista* valor = this;

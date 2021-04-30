@@ -4,13 +4,11 @@
 #include "string"
 #include "vector"
 
-std::vector<char> pos = {'a', '1', '2', '3', '4', '5', '6', '7', '8', '9'};
-
-void Totito::jugada(char lugar) {
+void Totito::jugada(char casilla) {
 
     if (jugador == j1) {
         for (int i = 0; i < pos.size(); i++) {
-            if (pos[i] == lugar) {
+            if (pos[i] == casilla) {
                 pos[i] = 'X';
                 jugador = j2;
                 return;
@@ -19,7 +17,7 @@ void Totito::jugada(char lugar) {
     }
     else {
         for (int i = 0; i < pos.size(); i++) {
-            if (pos[i] == lugar) {
+            if (pos[i] == casilla) {
                 pos[i] = 'O';
                 jugador = j1;
                 return;
@@ -30,7 +28,7 @@ void Totito::jugada(char lugar) {
     std::cout << "Posicion no valida, vuelva a intentarlo.\n";
 }
 
-int ganador = 0;
+
 void Totito::victoria() {
 
     if (pos[1] == pos[2] && pos[2] == pos[3]) {

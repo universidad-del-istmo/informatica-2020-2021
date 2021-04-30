@@ -20,8 +20,11 @@ int main() {
 
                 terreno[i][j] = Terreno::Tierra;
             }
-            else {
+            else if(j % 3) {
                 terreno[i][j] = Terreno::Agua;
+            }
+            else {
+                terreno[i][j] = Terreno::Calle;
             }
         }
     }

@@ -157,21 +157,20 @@ bool Lista::operator==(const Lista& otra) {
     return l1 == l2;
 }
 
-// El método 'operator>' sirve para comparar si una lista de
-// tipo Lista es mayor a la otra:
+// El método 'operator>' sirve para comparar si los valores
+// de una lista de tipo Lista es mayor a los valores de la
+// otra:
 
 bool Lista::operator>(const Lista& otra) {
 
-    Lista& l1 = *_resto;
-    Lista& l2 = *otra._resto;
+    if(_valor <= otra._valor) {
 
-    int largo1 = l1.largo();
-    int largo2 = l2.largo();
-
-    if(largo1 > largo2) {
-        return true;
-    }
-    else {
         return false;
     }
+    else if(_valor > otra._valor) {
+
+        return true;
+    }
+
+    return *_resto > *otra._resto;
 }
