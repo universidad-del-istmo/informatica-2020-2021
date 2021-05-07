@@ -65,7 +65,7 @@ void ListaEncadenada::borrar(int i) {
 
         tmp->getNull();
         delete tmp;
-        return; 
+        return;
     }
 
     previo->_resto = actual->_resto;
@@ -75,5 +75,13 @@ void ListaEncadenada::borrar(int i) {
 
 void ListaEncadenada::agregar(int nuevo) {
 
-    return;
+    if(_resto == nullptr) {
+
+        _resto = new ListaEncadenada(0);
+        _resto->_valor = nuevo;
+    }
+    else {
+
+        _resto->agregar(nuevo);
+    }
 }

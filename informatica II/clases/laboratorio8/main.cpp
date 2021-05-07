@@ -31,5 +31,4 @@ int main() {
             jugador = 1;
         }
     }
-
 }

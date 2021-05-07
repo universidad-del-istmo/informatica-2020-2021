@@ -92,5 +92,4 @@ int main(int argc, char** argv) {
     else {
         std::cout << "No es mayor \n";
     }
-
 }

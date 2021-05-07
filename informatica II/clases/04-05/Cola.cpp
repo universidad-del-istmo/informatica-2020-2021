@@ -18,7 +18,7 @@ int Cola::dequeue() {
 
     Lista* actual = this;
     int respuesta;
-    int final = (actual->largo()-1);
+    int final = (actual->largo() - 1);
 
     respuesta = (*this)[final];
 

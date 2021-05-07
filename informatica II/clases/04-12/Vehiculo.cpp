@@ -35,6 +35,7 @@ bool Vehiculo::mover(const Direccion direccion) {
         return true;
     }
     else {
+        
         return false;
     }
 }

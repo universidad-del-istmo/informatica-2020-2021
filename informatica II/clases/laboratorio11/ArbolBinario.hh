@@ -2,6 +2,7 @@
 
 #include <iostream>
 #include <cstddef>
+#include <vector>
 
 template<typename T>
 
@@ -23,17 +24,57 @@ class ArbolBinario {
             delete _derecha;
         }
 
-        /*void agregar(T nuevo) {
+        void agregar(T nuevo) {
 
-        }*/
+            if(_izquierda == nullptr) {
 
-        /*bool existe(T numero) {
+                _izquierda = new ArbolBinario(0);
+                _izquierda->_valor = nuevo;
+                return;
+            }
+            else if(_derecha == nullptr) {
 
-        }*/
+                _derecha = new ArbolBinario(0);
+                _derecha->_valor = nuevo;
+                return;
+            }
+            else {
 
-        /*int filtrar(T menor, T* arreglo) {
+                _izquierda->agregar(nuevo);
+                _derecha->agregar(nuevo);
+            }
+        }
 
-        }*/
+        bool existe(T numero) {
+
+            if(_valor == numero) {
+
+                return true;
+            }
+            else {
+
+                _izquierda->existe(numero);
+                _derecha->existe(numero);
+            }
+
+            return false;
+        }
+
+        int filtrar(T menor, T* arreglo) {
+
+            std::vector<T> vector;
+
+            if(_valor >= menor) {
+
+                vector.push_back(_valor);
+            }
+
+            _izquierda->filtrar(menor, arreglo);
+            _derecha->filtrar(menor, arreglo);
+
+            int tamano = vector.size();
+            return tamano;
+        }
 
     private:
         T _valor;

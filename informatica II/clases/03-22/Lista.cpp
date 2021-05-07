@@ -88,6 +88,7 @@ bool Lista::tryGet(std::size_t ix, int& respuesta) {
     for(std::size_t i = ix; i > 0; i--) {
 
         if(valor == nullptr) {
+            
             return false;
         }
 

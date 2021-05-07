@@ -2,7 +2,7 @@
 
 #include <iostream>
 
-// Método constructor:
+// Métodos constructores:
 
 Lista::Lista(int valor, Lista* resto) : _valor(valor), _resto(resto) {}
 
@@ -18,6 +18,9 @@ Lista::~Lista() {
 
     std::cout << "Se llamo el metodo destructor\n";
 }
+
+// Métodos que permiten acceder al valor y al resto desde
+// otra clase
 
 int Lista::get_valor() {
 
@@ -54,6 +57,7 @@ int Lista::largo() {
     int resultado = 0;
 
     for(Lista* i = this; i != nullptr; i = i->_resto) {
+
         resultado++;
     }
 
@@ -70,7 +74,8 @@ int Lista::operator[](std::size_t ix) {
     for(std::size_t i = ix; i > 0; i--) {
 
         if(valor == nullptr) {
-            std::cout << "Ese elemento no existe, estoy evitando un Segmentation fault.\n";
+
+            std::cout << "Ese elemento no existe, estoy evitando un segmentation fault.\n";
         }
 
         valor = valor->_resto;

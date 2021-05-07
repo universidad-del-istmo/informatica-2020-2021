@@ -98,6 +98,7 @@ un arreglo nuevo y asignarselo al segundo parametro. En este
 arreglo se colocan todos los valores que sean mayores que el primer
 parametro. El metodo debe retornar como resultado la cantidad
 de objetos que hay en el arreglo.
+
 */
 
     int* iResultados = nullptr;
@@ -113,6 +114,6 @@ de objetos que hay en el arreglo.
         
         std::cout << iResultados[i] << ",";
     }
-
+    
     std::cout << "\n";
 }

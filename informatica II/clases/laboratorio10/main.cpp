@@ -31,19 +31,35 @@ void agregarSiNoExiste(IColeccion& coleccion, int numero) {
         }
     }
 
-    // Con dynamic_cast, ver qué tipo es y usar métodos agregar().
+    if(existe == false) {
+
+        coleccion.agregar(numero);
+    }
 }
 
 // PROBLEMA 6 - Ordenar una IColeccion
-/*void ordenar(IColeccion coleccion) {
+void ordenar(IColeccion& coleccion) {
 
+    int tam = coleccion.cantidad();
 
-}*/
+    for(int i = 0; i < tam; i++) {
+
+        for(int j = i + 1; j < tam; j++) {
+
+            if(coleccion[i] > coleccion[j]) {
+
+                int aux = coleccion[i];
+                coleccion[i] = coleccion[j];
+                coleccion[j] = aux;
+            }
+        }
+    }
+}
 
 // Main
 int main () {
 
-    ListaEncadenada uno(1, new ListaEncadenada(2, new ListaEncadenada(3)));
+    ListaEncadenada uno(7, new ListaEncadenada(2, new ListaEncadenada(3)));
 
     std::vector<int> vector = {0, 1, 2, 3, 4, 5};
     ListaArreglo dos(vector);
@@ -63,9 +79,9 @@ int main () {
     std::cout << "Ahora el segundo valor de la ListaArreglo es: " << dos[1] << "\n";
 
     // PROBLEMA 1.4 - Agregar
-    // uno.agregar(6);
+    uno.agregar(4);
     dos.agregar(6);
-    // std::cout << "El valor agregado a la ListaEncadenada es: " << uno[5] << "\n";
+    std::cout << "El valor agregado a la ListaEncadenada es: " << uno[2] << "\n";
     std::cout << "El valor agregado a la ListaArreglo es: " << dos[5] << "\n";
 
     // PROBLEMA 4 - Buscar
@@ -75,8 +91,14 @@ int main () {
     std::cout << "Existe el valor 11 en la ListaArreglo? " << buscar(dos, 11) << "\n";
 
     // PROBLEMA 5 - AgregarSiNoExiste
-    /*agregarSiNoExiste(uno, 5);
+    agregarSiNoExiste(uno, 5);
     agregarSiNoExiste(dos, 7);
     std::cout << "El valor agregado a la ListaEncadenada es: " << uno[3] << "\n";
-    std::cout << "El valor agregado a la ListaArreglo es: " << dos[6] << "\n";*/
+    std::cout << "El valor agregado a la ListaArreglo es: " << dos[6] << "\n";
+
+    // PROBLEMA 6 - Ordenar
+    ordenar(uno);
+    ordenar(dos);
+    std::cout << "El primer valor de la ListaEncadenada es: " << uno[0] << "\n";
+    std::cout << "El primer valor de la ListaArreglo es: " << dos[0] << "\n";
 }

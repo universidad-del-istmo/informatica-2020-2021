@@ -28,6 +28,7 @@ class Array {
     , _valores(new T[size]) {}
 
     T& operator[](const std::size_t i) {
+        
         return _valores[i];
     }
 

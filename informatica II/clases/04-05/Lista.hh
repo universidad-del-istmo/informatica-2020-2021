@@ -30,7 +30,7 @@ class Lista {
 
     void eliminar(int i);
 
-    void getNull(); // Borra 
+    void getNull();
 
     protected: // Lista y métodos que hereden de Lista
 
